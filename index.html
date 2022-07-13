@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title >E-Store</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="shortcut icon" href="photo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+            <div class="container-fluid">
+               <img class="pr-4" style="width: 80px;" src="images/logo.png" alt="">
+
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" style="width: 400px;" type="text" placeholder="Search your item">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#footersection">Download App</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#suppliersection">Supplier</a>
+                  </li>
+                  <li class="nav-item text-white">
+                   
+                    <button class="btn btn-warning text-white" data-toggle="modal" data-target="#myModal" type="button"  > <i class="fa fa-user p-1 "></i>Profile</button>
+                  </li>
+                  <li class="nav-item text-white">
+                    <a href="#itemsection" class="nav-link active"><i class="fa fa-cart-arrow-down p-1 "></i>Cart</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+          <a class="navbar-brand " href="images/logo.png"></a>
+
+
+          <div class=" float"  style="margin-top: 0 ">
+            <div class="row h-100 dropdown " >
+
+       <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Women
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+                <a class="dropdown-item" href="#">Link 6</a>
+                <a class="dropdown-item" href="#">Link 7</a>
+                <a class="dropdown-item" href="#">Link 8</a>
+                  </div>
+              </div>
+
+              <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Electronics
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+                <a class="dropdown-item" href="#">Link 6</a>
+                <a class="dropdown-item" href="#">Link 7</a>
+                <a class="dropdown-item" href="#">Link 8</a>
+                </div>
+            </div>
+
+            <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Kids
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+                <a class="dropdown-item" href="#">Link 6</a>
+                <a class="dropdown-item" href="#">Link 7</a>
+                <a class="dropdown-item" href="#">Link 8</a>
+              </div>
+          </div>
+
+          <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Kitchen
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+                <a class="dropdown-item" href="#">Link 6</a>
+                <a class="dropdown-item" href="#">Link 7</a>
+                <a class="dropdown-item" href="#">Link 8</a>
+            </div>
+        </div>
+
+        <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Footwear
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+                <a class="dropdown-item" href="#">Link 6</a>
+                <a class="dropdown-item" href="#">Link 7</a>
+                <a class="dropdown-item" href="#">Link 8</a>
+          </div>
+      </div>
+
+      <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Men
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+          <a class="dropdown-item" href="#">Link 4</a>
+          <a class="dropdown-item" href="#">Link 5</a>
+          <a class="dropdown-item" href="#">Link 6</a>
+          <a class="dropdown-item" href="#">Link 7</a>
+          <a class="dropdown-item" href="#">Link 8</a>
+        </div>
+    </div>
+
+    <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Health
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+        <a class="dropdown-item" href="#">Link 4</a>
+        <a class="dropdown-item" href="#">Link 5</a>
+        <a class="dropdown-item" href="#">Link 6</a>
+        <a class="dropdown-item" href="#">Link 7</a>
+        <a class="dropdown-item" href="#">Link 8</a>
+      </div>
+  </div>
+
+  <div class="col  text-center justify-content-center form-control-lg dropdown-toggle" data-toggle="dropdown" >Jewellery
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+                <a class="dropdown-item" href="#">Link 6</a>
+                <a class="dropdown-item" href="#">Link 7</a>
+                <a class="dropdown-item" href="#">Link 8</a>
+    </div>
+</div>
+                          
+            </div>
+            <hr>
+          </div>
+    </header>
+    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active font-weight-bold ">
+          <img src="images/img1.jpg"  width="1400" height="625" alt="Los Angeles" >
+          <div class="carousel-caption">
+            <h3>Latest Fashion</h3>
+            <p>Always find something trendy and good looking</p>
+          </div>  
+        </div>
+        <div class="carousel-item">
+          <img src="images/img2.jpg" width="1400" height="625" alt="Chicago">
+          <div class="carousel-caption text-dark">
+            <h3>  Order Online</h3>
+            <p>Get anything at your doorstep in few minutes</p>
+          </div>  
+        </div>
+        <div class="carousel-item">
+          <img src="images/img3.jpg" width="1400" height="625" alt="New York">
+          <div class="carousel-caption text-dark">
+            <h3>Cheap Prices</h3>
+            <p>Get everything at its cheapest rate</p>
+          </div> 
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    
+    </div>
+   
+    <div class="container justify-content-center text-center mt-3" id="suppliersection">
+      <h1 class="text-center text-capitalize pt-5 ">Become an e-commerce supplier</h2>
+        <hr class="w-75 mx-auto pt-4">
+      <h2>Sell your products to crores of customers at 0% commission</h1>
+      
+        <hr class="w-75 mx-auto pt-4">
+      <img src="images/img4.jpg" width="900"  height="450" style="margin:  25px 140px;"  alt="">
+      <button class="btn btn-warning" data-toggle="modal" data-target="#myModal" type="submit">Sign Up Now</button>
+    </div>
+     
+   <!-- Products starts here -->
+
+
+  <div class="container " id="itemsection">
+    <h1 class="text-center text-capitalize pt-5 ">Products For You</h1>
+    <hr class="w-25 mx-auto pt-4">
+
+    <div class="row py-3 " >
+
+      <!-- start here -->
+
+      <div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+     <img class="card-img-top py-3 " src="images/img5.jpg" alt="Card image" style="height:280px">
+        <div class="card-body text-left">
+          <p class="card-text " style="font-size: 16px;">Trendy Fashion For Womens</p>
+         <div class="row">
+          <h5 class="px-1 " >Rs.246  </h5>
+          <p class="px-1 text-secondary"><del>289</del></p>
+          <p class="text-success px-1">15% OFF</p>
+         </div> 
+          <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+          <div class="row">
+            <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+              <p class="text-secondary px-1">568 Reviews</p>  
+          </div>
+          <a href="#" class="stretched-link"></a>
+        </div>
+      </div>
+
+  <!-- start here -->
+
+  <div class=" col-lg-3 col-md-3 col-12 card stretched-link m-auto " style="width:150px" >
+    <img class="card-img-top py-3 " src="images/img6.jpg" alt="Card image" style="height:280px">
+    <div class="card-body text-left">
+      <p class="card-text " style="font-size: 16px;">Trendy Fashion For Men</p>
+     <div class="row">
+      <h5 class="px-1 " >Rs.248  </h5>
+      <p class="px-1 text-secondary"><del>280</del></p>
+      <p class="text-success px-1">15% OFF</p>
+     </div> 
+      <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+      <div class="row">
+        <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 4.7 <i class="fas fa-star"></i> </span> </h4> 
+          <p class="text-secondary px-1">668 Reviews</p>  
+      </div>
+      <a href="#" class="stretched-link"></a>
+    </div>
+  </div>
+
+    <!-- start here -->
+
+    <div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+      <img class="card-img-top py-3 " src="images/img7.jpg" alt="Card image" style="height:280px">
+      <div class="card-body text-left">
+        <p class="card-text " style="font-size: 16px;">Trendy Fashion For Kids</p>
+       <div class="row">
+        <h5 class="px-1 " >Rs.206  </h5>
+        <p class="px-1 text-secondary"><del>389</del></p>
+        <p class="text-success px-1">25% OFF</p>
+       </div> 
+        <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+        <div class="row">
+          <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.2 <i class="fas fa-star"></i> </span> </h4> 
+            <p class="text-secondary px-1">508 Reviews</p>  
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+
+     <!-- start here -->
+
+     <div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+      <img class="card-img-top py-3 " src="images/img8.jpg" alt="Card image" style="height:280px">
+      <div class="card-body  text-left">
+        <p class="card-text " style="font-size: 16px;">Latest Fashion For Womens</p>
+       <div class="row">
+        <h5 class="px-1 " >Rs.246  </h5>
+        <p class="px-1 text-secondary"><del>289</del></p>
+        <p class="text-success px-1">15% OFF</p>
+       </div> 
+        <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+        <div class="row">
+          <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+            <p class="text-secondary px-1">568 Reviews</p>  
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+    </div>
+
+<!-- new row starts here -->
+
+    <div class="row py-3 ">
+
+      <!-- start here -->
+
+      <div class=" col-lg-3 col-md-3 col-12 card m-auto px-3" style="width:150px" >
+        <img class="card-img-top py-3 " src="images/foot4.jpg" alt="Card image" style="height:280px">
+        <div class="card-body text-left">
+          <p class="card-text " style="font-size: 16px;">Sports shoes</p>
+         <div class="row">
+          <h5 class="px-1 " >Rs.246  </h5>
+          <p class="px-1 text-secondary"><del>289</del></p>
+          <p class="text-success px-1">15% OFF</p>
+         </div> 
+          <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+          <div class="row">
+            <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+              <p class="text-secondary px-1">568 Reviews</p>  
+          </div>
+          <a href="#" class="stretched-link"></a>
+        </div>
+      </div>
+
+  <!-- start here -->
+
+  <div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+    <img class="card-img-top py-3 " src="images/jew1.jpg" alt="Card image" style="height:280px">
+    <div class="card-body text-left">
+      <p class="card-text " style="font-size: 16px;">Latest jewellery for women</p>
+     <div class="row">
+      <h5 class="px-1 " >Rs.246  </h5>
+      <p class="px-1 text-secondary"><del>289</del></p>
+      <p class="text-success px-1">15% OFF</p>
+     </div> 
+      <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+      <div class="row">
+        <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+          <p class="text-secondary px-1">568 Reviews</p>  
+      </div>
+      <a href="#" class="stretched-link"></a>
+    </div>
+  </div>
+
+    <!-- start here -->
+
+    <div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+      <img class="card-img-top py-3 " src="images/jew2.jpg" alt="Card image" style="height:280px">
+      <div class="card-body text-left">
+        <p class="card-text " style="font-size: 16px;">latest Collection</p>
+       <div class="row">
+        <h5 class="px-1 " >Rs.246  </h5>
+        <p class="px-1 text-secondary"><del>289</del></p>
+        <p class="text-success px-1">15% OFF</p>
+       </div> 
+        <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+        <div class="row">
+          <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+            <p class="text-secondary px-1">568 Reviews</p>  
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+
+     <!-- start here -->
+
+     <div class=" col-lg-3 col-md-3 col-12 card m-auto  " style="width:150px" >
+      <img class="card-img-top py-3 " src="images/jew3.jpg" alt="Card image" style="height:280px">
+      <div class="card-body  text-left">
+        <p class="card-text " style="font-size: 16px;">Fancy Items</p>
+       <div class="row">
+        <h5 class="px-1 " >Rs.246  </h5>
+        <p class="px-1 text-secondary"><del>289</del></p>
+        <p class="text-success px-1">15% OFF</p>
+       </div> 
+        <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+        <div class="row">
+          <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+            <p class="text-secondary px-1">568 Reviews</p>  
+        </div>
+        <a href="#" class="stretched-link"></a>
+      </div>
+    </div>
+    </div>
+
+<!-- new row starts here -->
+
+<div class="row py-3 ">
+
+  <!-- start here -->
+
+  <div class=" col-lg-3 col-md-3 col-12 card m-auto px-3" style="width:150px" >
+    <img class="card-img-top py-3 " src="images/kit1.jpg" alt="Card image" style="height:280px">
+    <div class="card-body text-left">
+      <p class="card-text " style="font-size: 16px;">Home items at cheap price</p>
+     <div class="row">
+      <h5 class="px-1 " >Rs.246  </h5>
+      <p class="px-1 text-secondary"><del>289</del></p>
+      <p class="text-success px-1">15% OFF</p>
+     </div> 
+      <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+      <div class="row">
+        <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+          <p class="text-secondary px-1">568 Reviews</p>  
+      </div>
+      <a href="#" class="stretched-link"></a>
+    </div>
+  </div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+<img class="card-img-top py-3 " src="images/kit2.jpg" alt="Card image" style="height:280px">
+<div class="card-body text-left">
+  <p class="card-text " style="font-size: 16px;">Utensils at its best</p>
+ <div class="row">
+  <h5 class="px-1 " >Rs.246  </h5>
+  <p class="px-1 text-secondary"><del>289</del></p>
+  <p class="text-success px-1">15% OFF</p>
+ </div> 
+  <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+  <div class="row">
+    <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+      <p class="text-secondary px-1">568 Reviews</p>  
+  </div>
+  <a href="#" class="stretched-link"></a>
+</div>
+</div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+  <img class="card-img-top py-3 " src="images/kit3.jpg" alt="Card image" style="height:280px">
+  <div class="card-body text-left">
+    <p class="card-text " style="font-size: 16px;">Decorate your kitchen</p>
+   <div class="row">
+    <h5 class="px-1 " >Rs.246  </h5>
+    <p class="px-1 text-secondary"><del>289</del></p>
+    <p class="text-success px-1">15% OFF</p>
+   </div> 
+    <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+    <div class="row">
+      <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+        <p class="text-secondary px-1">568 Reviews</p>  
+    </div>
+    <a href="#" class="stretched-link"></a>
+  </div>
+</div>
+
+ <!-- start here -->
+
+ <div class=" col-lg-3 col-md-3 col-12 card m-auto  " style="width:150px" >
+  <img class="card-img-top py-3 " src="images/med1.jpg" alt="Card image" style="height:280px">
+  <div class="card-body  text-left">
+    <p class="card-text " style="font-size: 16px;">All items at affordable price</p>
+   <div class="row">
+    <h5 class="px-1 " >Rs.246  </h5>
+    <p class="px-1 text-secondary"><del>289</del></p>
+    <p class="text-success px-1">15% OFF</p>
+   </div> 
+    <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+    <div class="row">
+      <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+        <p class="text-secondary px-1">568 Reviews</p>  
+    </div>
+    <a href="#" class="stretched-link"></a>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- new row starts here -->
+
+<div class="row py-3 ">
+
+  <!-- start here -->
+
+  <div class=" col-lg-3 col-md-3 col-12 card m-auto px-3" style="width:150px" >
+    <img class="card-img-top py-3 " src="images/med2.jpg" alt="Card image" style="height:280px">
+    <div class="card-body text-left">
+      <p class="card-text " style="font-size: 16px;">Available at Your Door step</p>
+     <div class="row">
+      <h5 class="px-1 " >Rs.246  </h5>
+      <p class="px-1 text-secondary"><del>289</del></p>
+      <p class="text-success px-1">15% OFF</p>
+     </div> 
+      <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+      <div class="row">
+        <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+          <p class="text-secondary px-1">568 Reviews</p>  
+      </div>
+      <a href="#" class="stretched-link"></a>
+    </div>
+  </div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+<img class="card-img-top py-3 " src="images/med3.jpg" alt="Card image" style="height:280px">
+<div class="card-body text-left">
+  <p class="card-text " style="font-size: 16px;">Prices at its best</p>
+ <div class="row">
+  <h5 class="px-1 " >Rs.246  </h5>
+  <p class="px-1 text-secondary"><del>289</del></p>
+  <p class="text-success px-1">15% OFF</p>
+ </div> 
+  <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+  <div class="row">
+    <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+      <p class="text-secondary px-1">568 Reviews</p>  
+  </div>
+  <a href="#" class="stretched-link"></a>
+</div>
+</div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+  <img class="card-img-top py-3 " src="images/e1.jpg" alt="Card image" style="height:280px">
+  <div class="card-body text-left">
+    <p class="card-text " style="font-size: 16px;">Low price with Guarantee</p>
+   <div class="row">
+    <h5 class="px-1 " >Rs.246  </h5>
+    <p class="px-1 text-secondary"><del>289</del></p>
+    <p class="text-success px-1">15% OFF</p>
+   </div> 
+    <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+    <div class="row">
+      <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+        <p class="text-secondary px-1">568 Reviews</p>  
+    </div>
+    <a href="#" class="stretched-link"></a>
+  </div>
+</div>
+
+ <!-- start here -->
+
+ <div class=" col-lg-3 col-md-3 col-12 card m-auto  " style="width:150px" >
+  <img class="card-img-top py-3 " src="images/e2.jpg" alt="Card image" style="height:280px">
+  <div class="card-body  text-left">
+    <p class="card-text " style="font-size: 16px;">Available with Gurantee</p>
+   <div class="row">
+    <h5 class="px-1 " >Rs.246  </h5>
+    <p class="px-1 text-secondary"><del>289</del></p>
+    <p class="text-success px-1">15% OFF</p>
+   </div> 
+    <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+    <div class="row">
+      <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+        <p class="text-secondary px-1">568 Reviews</p>  
+    </div>
+    <a href="#" class="stretched-link"></a>
+  </div>
+</div>
+</div>
+
+<!-- new row starts here -->
+
+<div class="row py-3 ">
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto px-3" style="width:150px" >
+<img class="card-img-top py-3 " src="images/e3.jpg" alt="Card image" style="height:280px">
+<div class="card-body text-left">
+  <p class="card-text " style="font-size: 16px;">Available at its cheapest price</p>
+ <div class="row">
+  <h5 class="px-1 " >Rs.246  </h5>
+  <p class="px-1 text-secondary"><del>289</del></p>
+  <p class="text-success px-1">15% OFF</p>
+ </div> 
+  <p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+  <div class="row">
+    <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+      <p class="text-secondary px-1">568 Reviews</p>  
+  </div>
+  <a href="#" class="stretched-link"></a>
+</div>
+</div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+<img class="card-img-top py-3 " src="images/foot1.jpg" alt="Card image" style="height:280px">
+<div class="card-body text-left">
+<p class="card-text " style="font-size: 16px;">Trendy Sandals for women</p>
+<div class="row">
+<h5 class="px-1 " >Rs.246  </h5>
+<p class="px-1 text-secondary"><del>289</del></p>
+<p class="text-success px-1">15% OFF</p>
+</div> 
+<p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+<div class="row">
+<h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+  <p class="text-secondary px-1">568 Reviews</p>  
+</div>
+<a href="#" class="stretched-link"></a>
+</div>
+</div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto " style="width:150px" >
+<img class="card-img-top py-3 " src="images/foot2.jpg" alt="Card image" style="height:280px">
+<div class="card-body text-left">
+<p class="card-text " style="font-size: 16px;">Latest Fashion For Men</p>
+<div class="row">
+<h5 class="px-1 " >Rs.246  </h5>
+<p class="px-1 text-secondary"><del>289</del></p>
+<p class="text-success px-1">15% OFF</p>
+</div> 
+<p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+<div class="row">
+  <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+    <p class="text-secondary px-1">568 Reviews</p>  
+</div>
+<a href="#" class="stretched-link"></a>
+</div>
+</div>
+
+<!-- start here -->
+
+<div class=" col-lg-3 col-md-3 col-12 card m-auto  " style="width:150px" >
+<img class="card-img-top py-3 " src="images/foot3.jpg" alt="Card image" style="height:280px">
+<div class="card-body  text-left">
+<p class="card-text " style="font-size: 16px;">Trendy Fashion For Womens</p>
+<div class="row">
+<h5 class="px-1 " >Rs.246  </h5>
+<p class="px-1 text-secondary"><del>289</del></p>
+<p class="text-success px-1">15% OFF</p>
+</div> 
+<p class="text-left" style="font-size: 16px;" >Free Delivery</p>
+
+<div class="row">
+  <h5 class="px-1"><span class="badge badge-pill badge-success text-white font-weight-bold  "> 3.7 <i class="fas fa-star"></i> </span> </h4> 
+    <p class="text-secondary px-1">568 Reviews</p>  
+</div>
+<a href="#" class="stretched-link"></a>
+</div>
+</div>
+</div>
+
+
+  </div>
+    
+
+
+<!-- jumbotron starts here for now -->
+
+
+<div class="jumbotron  text-capitalize" style="margin-bottom:0">
+  <div class="row " id="footersection">
+
+<!-- column  starts here -->
+
+    <div class="col-lg-3 col-md-3 col-12 text-center ">
+      <h2>Shop Non-stop on e-commerce</h2>
+      <br>
+      <p>Trusted by more than 1 Crore Indians
+        Cash on Delivery | Free Delivery</p>
+       <a href="#"> <img src="images/img9.png" style="width:112px ;" alt=""></a> 
+    </div>
+
+<!-- column  starts here -->
+
+<div class="col-lg-3 col-md-3 col-12 text-center " >
+  <a  href="#" class=" p-3 font-weight-bold text-secondary" style="font-size:17px ;">Our Influencer Program</a>
+  <br>
+  <a  href="#" class=" p-3 font-weight-bold text-secondary" style="font-size:17px ;">Become a supplier</a>
+  <br>
+  <a  href="#" class=" p-3 font-weight-bold text-secondary" style="font-size:17px ;">Legal and Policies</a>
+  <br>
+  <a  href="#" class=" p-3 font-weight-bold text-secondary" style="font-size:17px ;">Notices and Returns</a>
+  <br>
+  <a  href="#" class=" p-3 font-weight-bold text-secondary" style="font-size:17px ;">Hall of Fame</a>
+  <br>
+  <a  href="#" class=" p-3 font-weight-bold text-secondary" style="font-size:17px ;">Careers</a>
+  <br>
+ 
+</div class="col-lg-3 col-md-3 col-12 text-center " >
+
+<!-- contact column starts here -->
+<div>
+  <h4>reach out to us</h5>
+  <div class="my-5">
+    <a class="p-2 " href="#"><img src="images/logo1.jpg" style="width: 30px; ;" alt=""></a>
+    <a class="p-2 "href="#"><img src="images/logo2.png" style="width: 30px; ;" alt=""></a>
+    <a class="p-2 " href="#"><img src="images/logo3.png" style="width: 30px; ;" alt=""></a>
+    <a class="p-2 "href="#"><img src="images/logo4.png" style="width: 30px; ;" alt=""></a>
+    <a class="p-2 "href="#"><img src="images/logo5.png" style="width: 30px; ;" alt=""></a>
+  </div>
+ 
+</div>
+
+<!-- contact column starts here -->
+<div class="col-lg-3 col-md-3 col-12 text-center ">
+  <h4>contact us</h4>
+  <div>
+   <p>Street:  A 99, Group Indl Area, Wazirpur
+
+    City:   Delhi
+    
+    State/province/area:    Delhi
+    
+    Phone number  01127373200
+    
+    Zip code  110052
+    
+    Country calling code  +91
+    
+    Country  India</p>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+<!-- Modal starts here -->
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title text-center">Sign Up</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- modal ends here -->
+
+ 
+
+
+
+</body>
+</html>
